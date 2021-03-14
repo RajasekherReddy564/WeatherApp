@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/mapContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/pinImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/marker" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bookmarkToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/margin_regular"
+            android:background="@drawable/buttonbackground"
+            android:text="@string/show_bookmark"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="@color/color_on_primary"
+            android:drawableStart="@drawable/ic_adjust_pin"
+            android:textColor="@color/color_on_primary"
+            app:iconTint="@color/color_on_primary"
+            app:layout_anchor="@id/cityBottomSheetLayout"
+            app:layout_anchorGravity="end|top" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bookmarkToggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/margin_regular"
+            android:background="@drawable/buttonbackground"
+            android:text="Clear Bookmarks"
+            android:textColor="@color/color_on_primary"
+            app:iconTint="@color/color_on_primary"
+            app:layout_anchor="@id/cityBottomSheetLayout"
+            app:layout_anchorGravity="start|top" />
+
+
+        <include layout="@layout/bottom_sheet_city" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
