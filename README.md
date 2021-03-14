@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/RajasekherReddy564/WeatherApp">
-    <img alt="Open Weather Logo" src="./readme/logo.png" width="350px" />
+    <img alt="Open Weather Logo" src="./readme/marker.png" width="350px" />
   </a>
 </h1>
 
