@@ -121,6 +121,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnCameraMoveListe
         }
 
 
+
         mapViewModel.pinWeatherLiveData.observe(this, Observer { locationWeatherModel ->
             addMarker(locationWeatherModel)
         })
