@@ -6,7 +6,7 @@
     <data>
         <variable
             name="locationWeather"
-            type="com.lucasmontano.openweathermap.model.domain.LocationWeatherModel" />
+            type="com.location.openweathermap.model.domain.LocationWeatherModel" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
